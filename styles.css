@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'digital';
+  src: url('fonts/digital-7.ttf') format('truetype');
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+  flex-direction: column;
+  background-color: aquamarine;
+  border-style: solid;
+  border-color: blueviolet;
+  border-radius: 10px;
+  border-width: 15px;
+  height: 750px;
+  width: 600px;
+  margin: 5% auto
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  padding: 5px;
+}
+
+button{
+  font-size: 40pt;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.display {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-bottom: solid;
+  border-width: 5px;
+  background-color: cornsilk;
+  padding: 10px;
+  font-family: 'digital';
+  font-size: 70pt;
+}
+
+.numbers{
+  background-color: crimson;
+}
+
+.operators{
+  background-color: darkkhaki;
+}
+
+.commands{
+  background-color: darkseagreen;
+}
